@@ -1,4 +1,3 @@
-cat > /mnt/user-data/outputs/README.md << 'ENDOFFILE'
 <div align="center">
 
 <img src="https://img.shields.io/badge/NimbusIQ-AWS%20Infrastructure%20Monitor-ff9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="NimbusIQ" />
