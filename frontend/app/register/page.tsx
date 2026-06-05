@@ -116,7 +116,7 @@ export default function RegisterPage() {
               type="text"
               value={name}
               onChange={e => setName(e.target.value)}
-              placeholder="Nikun Kumar"
+              placeholder="Nikunj"
               style={inputStyle}
             />
           </div>

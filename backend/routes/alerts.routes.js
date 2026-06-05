@@ -18,9 +18,22 @@ router.get('/', authenticate, async (req, res) => {
 router.post('/', authenticate, async (req, res) => {
   try {
     const { dailyLimit, monthlyLimit, email } = req.body
-    const alert = await prisma.alert.create({
-      data: { userId: req.user.id, dailyLimit, monthlyLimit, email }
+    // upsert = update if exists, create if not
+    // prevents duplicate alert records when user clicks "Update Alert"
+    const existing = await prisma.alert.findFirst({
+      where: { userId: req.user.id }
     })
+    let alert
+    if (existing) {
+      alert = await prisma.alert.update({
+        where: { id: existing.id },
+        data: { dailyLimit, monthlyLimit, email }
+      })
+    } else {
+      alert = await prisma.alert.create({
+        data: { userId: req.user.id, dailyLimit, monthlyLimit, email }
+      })
+    }
     res.json({ success: true, data: alert })
   } catch (err) {
     res.status(500).json({ success: false, error: err.message })
