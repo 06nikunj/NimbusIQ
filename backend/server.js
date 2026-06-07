@@ -24,7 +24,11 @@ const PORT = process.env.PORT || 5000
 // ---- MIDDLEWARE ----
 app.use(helmet())
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: [
+    'http://localhost:3000',
+    'https://nimbusiq.vercel.app',
+    /\.vercel\.app$/
+  ],
   credentials: true
 }))
 app.use(morgan('dev'))
