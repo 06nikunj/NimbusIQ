@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/NimbusIQ-AWS%20Infrastructure%20Monitor-ff9900?style=for-the-badge&logo=amazonaws&logoColor=white" alt="NimbusIQ" />
+[![NimbusIQ](https://img.shields.io/badge/NimbusIQ-AWS%20Infrastructure%20Monitor-ff9900?style=for-the-badge&logo=amazonaws&logoColor=white)](https://nimbusiq.vercel.app)
 
 # ☁️ NimbusIQ — Cloud Infrastructure Monitor & AI Cost Optimizer
 
@@ -471,8 +471,6 @@ Building NimbusIQ required solving real engineering problems that appear in prod
 
 **Async parallel fetching** — Using `Promise.allSettled` to fetch EC2, S3, costs, and alerts simultaneously instead of sequentially, reducing dashboard load time by 75%.
 
-**AI prompt engineering** — Designing prompts that force structured JSON output from GPT, handle edge cases like empty infrastructure, and return actionable recommendations with monetary estimates.
-
 **Production patterns** — Environment-based configuration, graceful error handling, database migrations, PM2 process management, and health check endpoints.
 
 ---
@@ -481,7 +479,7 @@ Building NimbusIQ required solving real engineering problems that appear in prod
 
 **Nikunj Purohit** — B.Tech CSE · SRM Institute of Science & Technology
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin)](https://linkedin.com/in/https://www.linkedin.com/in/nikunjpurohit)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/nikunjpurohit)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-333?style=flat-square&logo=github)](https://github.com/06nikunj)
 [![Email](https://img.shields.io/badge/Email-Contact-d14836?style=flat-square&logo=gmail)](mailto:nikunjpurohit06@gmail.com)
 
