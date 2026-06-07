@@ -20,7 +20,7 @@
 
 <br/>
 
-[**Live Demo**](https://nimbusiq.vercel.app) · [**Backend API**](https://api.nimbusiq.com/health) · [**Report Bug**](https://github.com/YOUR_USERNAME/NimbusIQ/issues) · [**Request Feature**](https://github.com/06nikunj/NimbusIQ/issues)
+[**Live Demo**](https://nimbusiq.vercel.app) · [**Backend API**](https://nimbusiq.onrender.com) · [**Report Bug**](https://github.com/06nikunj/NimbusIQ/issues) · [**Request Feature**](https://github.com/06nikunj/NimbusIQ/issues)
 
 </div>
 
@@ -481,9 +481,9 @@ Building NimbusIQ required solving real engineering problems that appear in prod
 
 **Nikunj Purohit** — B.Tech CSE · SRM Institute of Science & Technology
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-333?style=flat-square&logo=github)](https://github.com/YOUR_USERNAME)
-[![Email](https://img.shields.io/badge/Email-Contact-d14836?style=flat-square&logo=gmail)](mailto:YOUR_EMAIL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin)](https://linkedin.com/in/https://www.linkedin.com/in/nikunjpurohit)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-333?style=flat-square&logo=github)](https://github.com/06nikunj)
+[![Email](https://img.shields.io/badge/Email-Contact-d14836?style=flat-square&logo=gmail)](mailto:nikunjpurohit06@gmail.com)
 
 ---
 
