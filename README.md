@@ -277,7 +277,7 @@ npx prisma generate
 **6. Start the backend**
 ```bash
 npm run dev
-# Backend running on http://localhost:5000
+# Backend running on https://nimbusiq.onrender.com
 ```
 
 **7. Start the frontend**

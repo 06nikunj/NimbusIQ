@@ -110,7 +110,7 @@ async function fetchBuckets() {
 
     const res = await fetch(
 
-      'http://localhost:5000/api/s3/buckets',
+      'https://nimbusiq.onrender.com/api/s3/buckets',
 
       {
 

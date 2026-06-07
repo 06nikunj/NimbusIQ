@@ -96,8 +96,8 @@ export default function SettingsPage() {
   async function fetchData() {
     try {
       const [credRes, healthRes] = await Promise.all([
-        fetch('http://localhost:5000/api/credentials', { headers: buildHeaders() }),
-        fetch('http://localhost:5000/health')
+        fetch('https://nimbusiq.onrender.com/api/credentials', { headers: buildHeaders() }),
+        fetch('https://nimbusiq.onrender.com/health')
       ])
       const credData = await credRes.json()
       if (credData.success) setCreds(credData)
@@ -115,7 +115,7 @@ export default function SettingsPage() {
   async function handleTest() {
     setError(''); setSuccess(''); setTesting(true)
     try {
-      const res = await fetch('http://localhost:5000/api/credentials/test', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/credentials/test', {
         method: 'POST', headers: buildHeaders()
       })
       const data = await res.json()
@@ -136,7 +136,7 @@ export default function SettingsPage() {
     if (!confirm('Are you sure you want to remove your AWS credentials? You will need to re-enter them to use NimbusIQ.')) return
     setError(''); setSuccess(''); setDeleting(true)
     try {
-      const res = await fetch('http://localhost:5000/api/credentials', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/credentials', {
         method: 'DELETE', headers: buildHeaders()
       })
       const data = await res.json()
@@ -286,7 +286,7 @@ export default function SettingsPage() {
             </div>
             <div className="info-row">
               <span className="info-label">API Endpoint</span>
-              <span className="info-value">http://localhost:5000</span>
+              <span className="info-value">https://nimbusiq.onrender.com</span>
             </div>
             <div className="info-row">
               <span className="info-label">AI Engine</span>

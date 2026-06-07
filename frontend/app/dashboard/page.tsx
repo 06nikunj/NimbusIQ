@@ -212,13 +212,13 @@ export default function DashboardPage() {
       try {
         // Run all fetches in parallel for speed
         const [ec2Res, s3Res, dailyRes, svcRes, totalRes, alertRes, histRes] = await Promise.allSettled([
-          fetch('http://localhost:5000/api/ec2/instances', { headers: h }),
-          fetch('http://localhost:5000/api/s3/buckets', { headers: h }),
-          fetch('http://localhost:5000/api/costs/daily', { headers: h }),
-          fetch('http://localhost:5000/api/costs/by-service', { headers: h }),
-          fetch('http://localhost:5000/api/costs/monthly-total', { headers: h }),
-          fetch('http://localhost:5000/api/alerts', { headers: h }),
-          fetch('http://localhost:5000/api/alerts/history', { headers: h }),
+          fetch('https://nimbusiq.onrender.com/api/ec2/instances', { headers: h }),
+          fetch('https://nimbusiq.onrender.com/api/s3/buckets', { headers: h }),
+          fetch('https://nimbusiq.onrender.com/api/costs/daily', { headers: h }),
+          fetch('https://nimbusiq.onrender.com/api/costs/by-service', { headers: h }),
+          fetch('https://nimbusiq.onrender.com/api/costs/monthly-total', { headers: h }),
+          fetch('https://nimbusiq.onrender.com/api/alerts', { headers: h }),
+          fetch('https://nimbusiq.onrender.com/api/alerts/history', { headers: h }),
         ])
 
         // EC2

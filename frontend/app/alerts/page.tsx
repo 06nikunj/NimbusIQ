@@ -110,8 +110,8 @@ export default function AlertsPage() {
   async function fetchData() {
     try {
       const [alertRes, histRes] = await Promise.all([
-        fetch('http://localhost:5000/api/alerts', { headers: buildHeaders() }),
-        fetch('http://localhost:5000/api/alerts/history', { headers: buildHeaders() })
+        fetch('https://nimbusiq.onrender.com/api/alerts', { headers: buildHeaders() }),
+        fetch('https://nimbusiq.onrender.com/api/alerts/history', { headers: buildHeaders() })
       ])
       const alertData = await alertRes.json()
       const histData = await histRes.json()
@@ -138,7 +138,7 @@ export default function AlertsPage() {
     }
     setSaving(true)
     try {
-      const res = await fetch('http://localhost:5000/api/alerts', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/alerts', {
         method: 'POST', headers: buildHeaders(),
         body: JSON.stringify({
           dailyLimit: parseFloat(dailyLimit),

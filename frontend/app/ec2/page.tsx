@@ -121,7 +121,7 @@ export default function EC2Page() {
       if (token && token.Authorization) {
         reqHeaders['Authorization'] = token.Authorization
       }
-      const res = await fetch('http://localhost:5000/api/ec2/instances', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/ec2/instances', {
         method: 'GET',
         headers: reqHeaders,
       })

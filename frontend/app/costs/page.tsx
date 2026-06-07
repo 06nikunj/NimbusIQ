@@ -140,7 +140,7 @@ export default function CostsPage() {
   useEffect(() => {
     async function fetchCosts() {
       try {
-        const res = await fetch('http://localhost:5000/api/costs/daily', {
+        const res = await fetch('https://nimbusiq.onrender.com/api/costs/daily', {
           method: 'GET',
           headers: buildHeaders(),
         })

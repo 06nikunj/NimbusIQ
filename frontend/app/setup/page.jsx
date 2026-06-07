@@ -90,7 +90,7 @@ export default function SetupPage() {
     setSaving(true)
     try {
       const authHeaders = getAuthHeader()
-      const res = await fetch('http://localhost:5000/api/credentials', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/credentials', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -117,7 +117,7 @@ export default function SetupPage() {
     setTesting(true)
     try {
       const authHeaders = getAuthHeader()
-      const res = await fetch('http://localhost:5000/api/credentials/test', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/credentials/test', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

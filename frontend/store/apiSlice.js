@@ -6,7 +6,7 @@ import Cookies from 'js-cookie'
 export const api = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({ 
-    baseUrl: 'http://localhost:5000/api',
+    baseUrl: 'https://nimbusiq.onrender.com/api',
     // prepareHeaders runs before every single API call
     // It reads the JWT token from cookies and attaches it
     // Without this, every protected route returns 401 Unauthorized

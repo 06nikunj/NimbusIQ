@@ -111,7 +111,7 @@ export default function OptimizerPage() {
 
   async function fetchRecommendations() {
     try {
-      const res = await fetch('http://localhost:5000/api/optimizer/recommendations', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/optimizer/recommendations', {
         headers: buildHeaders()
       })
       const data = await res.json()
@@ -130,7 +130,7 @@ export default function OptimizerPage() {
     setSuccess('')
     setAnalyzing(true)
     try {
-      const res = await fetch('http://localhost:5000/api/optimizer/analyze', {
+      const res = await fetch('https://nimbusiq.onrender.com/api/optimizer/analyze', {
         method: 'POST', headers: buildHeaders()
       })
       const data = await res.json()
@@ -148,7 +148,7 @@ export default function OptimizerPage() {
 
   async function updateStatus(id: number, newStatus: string) {
     try {
-      await fetch(`http://localhost:5000/api/optimizer/${id}/status`, {
+      await fetch(`https://nimbusiq.onrender.com/api/optimizer/${id}/status`, {
         method: 'PATCH', headers: buildHeaders(),
         body: JSON.stringify({ status: newStatus })
       })
